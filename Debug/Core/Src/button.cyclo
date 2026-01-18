@@ -1,0 +1,5 @@
+../Core/Src/button.c:40:13:update_button	3
+../Core/Src/button.c:53:13:update_button_state	11
+../Core/Src/button.c:98:13:button_debounce	4
+../Core/Src/button.c:119:13:consume_short_press_event	2
+../Core/Src/button.c:128:13:consume_long_press_event	2

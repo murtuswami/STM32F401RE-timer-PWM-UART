@@ -1,0 +1,4 @@
+../Core/Src/led.c:20:6:update_led	16	static
+../Core/Src/led.c:52:17:led_on	8	static
+../Core/Src/led.c:57:17:led_off	8	static
+../Core/Src/led.c:63:13:toggle_led	8	static
