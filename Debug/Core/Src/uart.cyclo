@@ -1,3 +1,0 @@
-../Core/Src/uart.c:27:6:poll_uart_rx	3
-../Core/Src/uart.c:42:6:push_uart_tx	2
-../Core/Src/uart.c:52:6:UART_IRQ_custom_handler	4

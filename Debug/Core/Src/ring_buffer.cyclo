@@ -1,2 +1,0 @@
-../Core/Src/ring_buffer.c:5:6:ring_buffer_push	2
-../Core/Src/ring_buffer.c:15:6:ring_buffer_pop	2
