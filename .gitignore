@@ -1,0 +1,23 @@
+# Build output
+Debug/
+Release/
+
+# Eclipse/CubeIDE workspace noise
+.metadata/
+.settings/
+*.swp
+*.swo
+
+# Compiled artifacts
+*.o
+*.d
+*.a
+*.elf
+*.map
+*.lst
+*.hex
+*.bin
+
+# OS junk
+.DS_Store
+Thumbs.db
