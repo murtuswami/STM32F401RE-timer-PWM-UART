@@ -22,8 +22,6 @@ static RingBuffer tx_rb = {
 };
 
 
-
-
 bool poll_uart_rx(uint8_t data_buf[],uint32_t buf_size){
 	uint8_t b;
 	uint32_t data_index = 0;
@@ -36,18 +34,18 @@ bool poll_uart_rx(uint8_t data_buf[],uint32_t buf_size){
 	}
 	data_buf[data_index] = '\0';
 	return true;
-
 }
 
-bool push_uart_tx(uint8_t *data_buf) {
+bool push_uart_tx(const uint8_t *data_buf) {
 	while((char)*data_buf) {
-		ring_buffer_push(*data_buf,&tx_rb);
+		if (!ring_buffer_push(*data_buf, &tx_rb)) return false;
 		++data_buf;
 	}
 
 	USART2->CR1 |= USART_CR1_TXEIE;
 	return true;
 }
+
 
 void UART_IRQ_custom_handler(){
 	if (USART2->SR & USART_SR_RXNE) { 	// recieve buffer
@@ -64,4 +62,5 @@ void UART_IRQ_custom_handler(){
 		}
 	}
 }
+
 

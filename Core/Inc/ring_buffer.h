@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#define RING_BUFFER_SIZE 20
+#define RING_BUFFER_SIZE 256
 
 
 typedef struct {
